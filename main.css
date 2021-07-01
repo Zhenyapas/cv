@@ -1,0 +1,260 @@
+
+@font-face {
+font-family: 'Futura Medium';
+src: url('FuturaMediumC.eot');
+src: url('FuturaMediumC.eot?#iefix') format('embedded-opentype'),
+url('FuturaMediumC.woff') format('woff'),
+url('fonts/FuturaMediumC.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'DIN Next';
+src: url('DINNextLTPro-Light.eot');
+src: url('DINNextLTPro-Light.eot?#iefix') format('embedded-opentype'),
+url('DINNextLTPro-Light.woff') format('woff'),
+url('DINNextLTPro-Light.ttf') format('truetype');
+font-weight: 500;
+font-style: 500;
+}
+
+
+
+
+*{
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	color: white;
+    scroll-behavior: smooth;
+}
+
+
+
+	
+
+
+
+.container{
+	display: flex;
+}
+
+.section{
+	min-height: 100 vh;
+	
+
+}
+.section1{
+	flex-basis: 10%;
+	height: 100vh;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 30px;
+}
+.section2{
+	flex-basis: 25%;
+	border-right: 0.5px solid white ;
+	border-left: 0.5px solid white ;
+	display:flex;
+	
+	flex-direction: column;
+}
+.section3{
+	flex-basis: 65%;
+	display:flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+.section4{
+	
+	position: fixed;
+	left: 95vw;
+	
+
+	
+	
+
+}
+.section4 div{
+	transform: rotate(90deg);
+	margin-bottom: 120px;
+	font-family: 'DIN Next';
+
+
+
+}
+.section4 div:first-child{
+	margin-top: 20vh;
+	
+}
+.section4 div:last-child{
+	
+}
+.logo{
+	
+	font-family: 'Futura Medium';
+	color: #236CF4;
+	font-size: 17px;
+	left: 9vw;
+	margin-top: 30px;
+	position: fixed;
+}
+
+.about{
+	font-family: "Din Next";
+	font-size: 17px;
+	margin-top: 200px;
+	margin-left: 10px;
+
+}
+.title{
+	font-family: "Futura Medium";
+	margin-top: 150px;
+	margin-left: 10px;
+	font-size: 40px;
+	max-width: 700px;
+
+}
+.titleAbout{
+	margin-top: 150px;
+}
+.colorText{
+	color: #236CF4;
+}
+.count{
+	font-family: "Din Next";
+	font-size: 14px;
+	margin-left: 10px;
+}
+.count1{
+	margin-top: 375px;
+	
+}
+.titleSecond{
+	font-family: "Din Next";
+	font-size: 17px;
+	margin-left: 10px;
+	max-width: 400px;
+	margin-top: 50px;
+}
+.titleAbout2{
+	font-family: "Din Next";
+	font-size: 17px;
+	margin-top: 50px;
+	margin-left: 10px;
+	max-width: 400px;
+}
+.textSection2{
+	margin-top: 20px;
+}
+.point{
+	font-family: "Din Next";
+	font-size: 17px;
+	margin-top: 200px;
+	margin-left: 10px;
+}
+.titleSkills{
+	margin-top: 150px;
+}
+.count2{
+	margin-top: 770px;
+}
+
+
+.link:hover{
+	color: #236CF4;
+	transition: 0.7s;
+}
+
+.link_active{
+	color: #236CF4;
+}
+.works{
+	font-family: "Din Next";
+	font-size: 17px;
+	margin-top: 200px;
+	margin-left: 10px;
+}
+.count3{
+	margin-top: 720px;
+}
+
+	
+}
+.titleWorks{
+	margin-top: 200px;
+}
+.project{
+	margin-bottom: 20px;
+	transition: 0.4s;
+}
+
+.line{
+	width: 0;
+	height: 3px;
+	transition: 0.3s;
+}
+.project:hover .line {
+	width: 140px;
+	height: 3px;
+	background-color: #236CF4;
+	margin-left: 3px;
+}
+
+.project:hover a{
+	color: #236CF4;
+}
+.count4{
+	margin-top: 630px;
+}
+.titleContacts2{
+	margin-bottom: 300px;
+	font-size: 20px;
+}
+
+.contactLink:hover {
+	color: #236CF4;
+
+}
+
+
+@media (max-width:600px){
+ 
+ .section2{
+ 	display: none;
+ }
+ .section1{
+ 	flex-basis: 5%;
+ }
+.logo{
+	left: 5vw;
+}
+.titleContacts2{
+	margin-bottom: 200px;
+	font-size: 20px;
+}
+.about{
+	margin-top: 150px;
+
+}
+.title{
+	margin-top: 100px;
+}
+}
+
+@media (max-width:1000px){
+.section1{
+	flex-basis: 5%;
+}	
+.section2{
+	flex-basis: 15%;
+}
+.section3{
+	flex-basis:80% ;
+}	
+}
+
+
